@@ -197,7 +197,10 @@ export default function FundMe() {
                                 >
                                     {funders.map((funder) => {
                                         return (
-                                            <li className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
+                                            <li
+                                                className="flex items-center justify-between py-3 pl-3 pr-4 text-sm"
+                                                key={funder}
+                                            >
                                                 <div className="flex w-0 flex-1 items-center">
                                                     {funder.toUpperCase()}
                                                 </div>
