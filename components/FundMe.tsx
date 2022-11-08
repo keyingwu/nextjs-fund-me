@@ -3,7 +3,11 @@ import { useNotification } from "web3uikit"
 import { abi, contractAddresses } from "../constants"
 import { useEffect, useState } from "react"
 import { BigNumber, ethers, ContractTransaction } from "ethers"
-
+declare global {
+    interface Window {
+        ethereum?: any
+    }
+}
 export default function FundMe() {
     const addresses: any = contractAddresses
     const { chainId: chainIdHex, isWeb3Enabled } = useMoralis()
