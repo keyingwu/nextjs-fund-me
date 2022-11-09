@@ -95,7 +95,7 @@ export default function FundMe() {
             type: "info",
             message: typeof msg == "undefined" ? title : msg,
             title: title,
-            position: "topR",
+            position: "bottomL",
             icon: "bell",
         })
     }
